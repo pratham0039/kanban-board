@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #fefcff;
+    
+ 
+
+
+
+}
+
+.icons{
+    margin-right: 6px;
+}
+.card {
+    width: 240px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    position: relative;
+    margin-bottom: 20px;
+    /* Color for urgency */
+}
+.key-circle {
+    width: 8px; /* Size of the circle */
+    height: 8px; /* Size of the circle */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #c3c3c3; /* Circle color */
+    display: inline-block; /* Ensures it aligns with the text */
+    margin-right: 4px; /* Space between circle and badge */
+    vertical-align: middle; /* Aligns with text */
+}
+.card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    
+    font-weight: 200;
+}
+.card .header h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #909090;
+}
+.card .header img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.badge_feature{
+    color: #909090 ;
+}
+
+
+.group_name{
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 600;
+
+}
+
+.dropdown-item label{
+    font-size: 12px;
+    margin-right: 60px;
+    margin-bottom: 2px;
+}
+
+.dropdown-container{
+    background-color: white;
+    
+}
+
+.dropdown{
+    margin: 20px;
+}
+
+.title  {
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight:normal;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2
+}
+.card .badge2 {
+    
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 8px;
+    margin-right: 5px;
+    width: 80px;
+}
+
+.card .badges {
+    display: flex;
+    
+    
+
+}
+.card .badge1 {
+    
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 8px;
+    margin-right: 5px;
+  
+}
+.card .badge.priority {
+    background-color: #f5c518;
+    color: white;
+}
+
+
+.kanban-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.dot-circle {
+    width: 8px; /* Size of the circle */
+    height: 8px; /* Size of the circle */
+    /* Makes it a circle */
+    background-color: white; /* Circle color */
+    display: flex; /* Flexbox for centering dots */
+    align-items: center; /* Center dots vertically */
+    justify-content: center; /* Center dots horizontally */
+    margin: 0 4px; /* Space between circles */
+}
+
+.fas{
+    color: #c3c3c3;
+
+}
+.dot {
+    width: 8px; /* Size of each dot */
+    height: 4px; /* Size of each dot */
+    background-color: rgb(222, 221, 221); /* Dot color */
+    border-radius: 50%; /* Makes it a dot */
+    margin: 0 1px; /* Space between dots */
+}
+
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between dropdowns */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background-color: white; /* Light gray */
+    border: 1px solid #ccc; /* Border color */
+    padding: 8px 16px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    width: 130px; /* Width of the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown select{
+    border-radius: 4px;
+    border-color: #f0f0f0;
+    padding: 6px;
+    font-size: 12px;
+    border-width: 2px;
+}
+
+.down-arrow{
+    margin-left: 6px;
+}
+
+.filter{
+    margin-right: 6px;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it */
+    background-color: rgb(249, 249, 249); /* Dropdown background */
+    min-width: 150px; /* Set a minimum width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
+    z-index: 1; /* Stay on top */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show on hover */
+}
+
+.dropdown-item {
+    padding: 12px 16px; /* Padding for items */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Background on hover */
+}
+
+
+.group-container {
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space between name and button */
+    align-items: center; /* Center vertically *//* Padding */ /* Border */ /* Space between groups */
+}
+
+.group-name {
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Bold text */
+}
+
+.header_checkbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-button {
+     /* Green background */
+    color: grey; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 20px; /* Font size for the "+" sign */
+    background-color: white;
+}
+
+.circle {
+    width: 8px; /* Circle width */
+    height: 8px; /* Circle height */
+    border: 2px solid grey; /* Green border color */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 2px; /* Space between circle and text */
+}
